@@ -1,0 +1,6 @@
+.vscode/
+.git/
+.gitignore
+src/
+tsconfig.json
+tabformatter*.vsix

@@ -1,0 +1,30 @@
+{
+	"name": "tabformatter",
+	"version": "0.0.1",
+	"displayName": "Table Formatter",
+	"publisher": "SpectralMorphy",
+	"icon": "",
+	"categories": [
+		"Other"
+	],
+	"main": "./dist/extension.js",
+	"engines": {
+		"vscode": "^1.94.0"
+	},
+	"activationEvents": [],
+	"contributes": {
+		"commands": [
+			{
+				"command": "tabformatter.format",
+				"title": "Format as table"
+			}
+		]
+	},
+	"scripts": {
+		"build": "./node_modules/typescript/bin/tsc"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.94.0",
+		"typescript": "^5.6.3"
+	}
+}
