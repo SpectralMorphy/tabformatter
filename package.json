@@ -17,8 +17,22 @@
 			{
 				"command": "tabformatter.format",
 				"title": "Format as table"
+			},
+			{
+				"command": "tabformatter.setSeparator",
+				"title": "Set preferred table separator"
 			}
-		]
+		],
+		"configuration":{
+			"title": "",
+			"properties": {
+				"tabformatter.separator": {
+					"type": ["string", "null"],
+					"default": null,
+					"description": "Column separator. If not found in the text, space is used as separator."
+				}
+			}
+		}
 	},
 	"scripts": {
 		"build": "./node_modules/typescript/bin/tsc"
